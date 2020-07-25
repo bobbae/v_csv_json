@@ -4,7 +4,8 @@ import os
 
 fn main() {
 	if os.args.len < 2 {
-		eprintln('vj filename')
+		prog_name := os.args[0]
+		eprintln('$prog_name filename')
 		exit(1)
 	}
 	filename := os.args[1]
